@@ -3,14 +3,18 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
-  const time = new Date().toLocaleTimeString()
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(new Date().toLocaleTimeString())
+
+    const updateTime = () => {
+    setCount(new Date().toLocaleTimeString())
+  }
+  setInterval(updateTime, 1000)
 
   return (
-    <div>{time}
-
+    <div>
+      {count}
+      
     </div>
-     
   )
 }
 
