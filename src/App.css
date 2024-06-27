@@ -1,0 +1,10 @@
+.DigitalClock {
+  color: rgb(9, 47, 47);
+  font-size: 150px;
+  justify-content: center;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+
+  text-shadow: 0px 0px 10px rgb(9, 47, 47);
+}

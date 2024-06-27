@@ -3,6 +3,9 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
+
+
+  
   const [count, setCount] = useState(new Date().toLocaleTimeString())
 
     const updateTime = () => {
@@ -11,7 +14,7 @@ function App() {
   setInterval(updateTime, 1000)
 
   return (
-    <div>
+    <div className='DigitalClock'>
       {count}
       
     </div>
